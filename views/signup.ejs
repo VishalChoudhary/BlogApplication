@@ -1,3 +1,32 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+  </head>
+  <body>
+    <h1>Signup</h1>
+    <form action="/user/signup" method="post">
+      <label>Full Name</label>
+      <input type="text" required name="fullName" />
+      <label>Email</label>
+      <input type="text" required name="email" />
+      <label>Password</label>
+      <input type="text" required name="password" />
+
+      <button type="submit">Signup</button>
+    </form>
+  </body>
+</html> -->
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,24 +40,21 @@
       <form action="/user/signup" method="post">
         <div class="mb-3">
           <label for="fullName" class="form-label">Full Name</label>
-          <input
-            type="text"
-            class="form-control"
-            id="fullName"
-            name="fullName"
-            aria-describedby="fullName"
-          />
+          <input type="text" 
+          required 
+          name="fullName" 
+          id="fullName" 
+          class="form-control"/>
         </div>
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label"
             >Email address</label
           >
-          <input
-            type="email"
-            name="email"
-            class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
+          <input type="text" 
+          required 
+          name="email" 
+          id="email"
+          class="form-control"
           />
           <div id="emailHelp" class="form-text">
             We'll never share your email with anyone else.
@@ -36,11 +62,11 @@
         </div>
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input
-            name="password"
-            type="password"
-            class="form-control"
-            id="exampleInputPassword1"
+          <input type="text" 
+          required 
+          name="password" 
+          id="password"
+          class="form-control"
           />
         </div>
 
