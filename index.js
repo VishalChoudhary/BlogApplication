@@ -8,6 +8,9 @@ const blogRoute = require("./routes/blog");
 const { checkForAuthenticationCookie } = require("./middlewares/authentication");
 const Blog = require("./models/blog");
 
+// require("./models/user");
+// require("./models/blog");
+
 app = express();
 PORT = 8001;
 
